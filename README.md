@@ -21,3 +21,53 @@ This project is an AI-powered tutor that extracts a transcript from a YouTube vi
 ```bash
 git clone https://github.com/your-username/ai-powered-tutor.git
 cd ai-powered-tutor
+
+## (Optional) Create and activate a virtual environment
+
+Edit
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+
+## Install dependencies
+
+Copy
+Edit
+pip install -r requirements.txt
+
+## 🛠️ Running the App
+Edit
+streamlit run app.py
+Then open your browser at http://localhost:8501.
+
+## 📁 .env Configuration (Optional)
+If using Hugging Face API (instead of local models), create a .env file:
+
+
+HUGGING_FACE_API_KEY=hf_your_actual_key_here
+For local usage with transformers, this file is not required.
+
+##📚 Example Usage
+Enter a YouTube video URL (with English transcript).
+
+Click "Process Video" to extract and embed the transcript.
+
+Ask any question like:
+
+"What is fine-tuning?"
+
+"Explain the main topic."
+
+##🧰 Tech Stack
+Frontend/UI: Streamlit
+
+NLP Backend: LangChain, Hugging Face Transformers
+
+Vector DB: FAISS
+
+Transcript Extraction: pytube, youtube-transcript-api
+
+
